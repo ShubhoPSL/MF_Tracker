@@ -1,9 +1,8 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React, {useState} from "react";
 import "./App.css";
-import Table from "./Components/Table/Table";
 import Login from "./Components/PageLogin/Login/Login";
 import Register from "./Components/PageLogin/Register/Register";
+import "./App.css";
 import Common from "./Components/Common/Common";
 
 function App() {
@@ -15,19 +14,12 @@ function App() {
 
   return (
     <div className="main-container">
-      {/* {
+       {/* {
         currentForm === "Login" ? <Login onFormSwitch={toggleForm}/> : <Register onFormSwitch={toggleForm}/>
-      } */}
-      {<BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Common />} />
-          <Route path="/data" element={<Table />} />
-        </Routes>
-      </BrowserRouter> }
-
+      }  */}
      
-      {/* <Table/> */}
-      {/* <Common /> */}
+      <Common />
+
     </div>
   );
 }

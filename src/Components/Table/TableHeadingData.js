@@ -1,6 +1,7 @@
 export const tableData = [
-  "scheme Name",
-  "market Value",
+  "Scheme Name",
+  "Fund Type",
+  "AuM Value",
   "1W",
   "1M",
   "3M",

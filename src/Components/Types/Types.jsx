@@ -37,7 +37,6 @@ function Types({ changeSelection }) {
               className="btn btn-green"
               onClick={handleClick(item.name)}
               key={item.name}
-              autoFocus
             >
               {item.name}
             </button>

@@ -8,7 +8,7 @@ const UserData = ({ users }) => {
           <tr key={current_user.schemeName} className="tableBodyRow">
             {Object.values(current_user).map((val, index) => (
               <td className="tableCol" key={index}>
-                {val ? val : "-"}
+                {val}
               </td>
             ))}
           </tr>

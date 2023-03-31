@@ -9,14 +9,14 @@
   @apply grid grid-flow-row grid-cols-3 p-3 text-clip;
 }
 
-.radio-div{
+.checkbox-div {
   @apply flex p-1 w-full;
 }
 
-.radio-button {
+.subtypes-checkbox {
   @apply relative float-left mt-0.5 mr-1 h-5 w-5 accent-green-600;
 }
 
-.radio-label{
-  @apply text-ellipsis ;
+.subtypes-label {
+  @apply text-ellipsis;
 }
