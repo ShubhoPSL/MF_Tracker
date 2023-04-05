@@ -3,6 +3,7 @@ import Types from "../Types/Types";
 import Duration from "../Duration/Duration";
 import SubTypes from "../Types/SubTypes/SubTypes";
 import { equity } from "../Types/SubTypes/SubTypeList";
+import Navbar from "../Navbar/Navbar";
 import Table from "../Table/Table";
 
 function Common() {
@@ -30,6 +31,7 @@ function Common() {
   return (
     <div>
       <>
+        <Navbar />
         <Types changeSelection={updateSelection} />
         <SubTypes
           type={stockType}

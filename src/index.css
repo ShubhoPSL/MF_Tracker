@@ -8,13 +8,15 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@import "Components/Navbar/Navbar.css";
 @import "Components/Types/Types.css";
 @import "Components/Types/SubTypes/EquityTypes.css";
 @import "Components/Duration/Duration.css";
