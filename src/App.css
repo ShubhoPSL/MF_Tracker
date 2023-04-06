@@ -1,3 +1,11 @@
-.main-container {
+/* .main-container {
   @apply bg-gray-100 min-h-screen max-h-full w-screen overflow-x-hidden;
+} */
+
+.main-container{
+  background-image: url("https://img.freepik.com/free-vector/woman-investing-getting-profit_74855-11229.jpg?w=900&t=st=1680759799~exp=1680760399~hmac=764840be8310f1f9b5bb5d5ae671ce370c65520128d0ebfb704201ffbe5bec76");
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size:60%;
 }
+
