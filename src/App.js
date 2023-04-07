@@ -14,11 +14,12 @@ function App() {
 
   return (
     <div className="main-container">
-       {/* {
+      {/* <header>
+       { 
         currentForm === "Login" ? <Login onFormSwitch={toggleForm}/> : <Register onFormSwitch={toggleForm}/>
-      }  */}
-     
-      <Common />
+        }
+     </header> */}
+      { <Common /> }
 
     </div>
   );
