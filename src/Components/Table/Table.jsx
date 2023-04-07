@@ -1,18 +1,14 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import { useErrorBoundary } from "react-error-boundary";
 import { Spinner } from "../Spinner/Spinner";
 import { tableData } from "./TableHeadingData";
 import UserData from "./UserData";
 
 const Table = ({ urlValue, durationValue }) => {
   const [users, setUsers] = useState([]);
-  const API =
-    "http://ec2-43-205-220-22.ap-south-1.compute.amazonaws.com:8082/stocks/" +
-    urlValue +
-    "/" +
-    durationValue;
-
-  console.log(API);
+  const { showBoundary } = useErrorBoundary();
+  const API = "http://localhost:8082/stocks/" + urlValue + "/" + durationValue;
 
   const fetchUser = async (url) => {
     setUsers([]);
@@ -22,8 +18,9 @@ const Table = ({ urlValue, durationValue }) => {
       if (data.length > 0) {
         setUsers(data);
       }
-    } catch (e) {
-      console.error(e);
+    } catch (error) {
+      console.log(error);
+      showBoundary(error);
     }
   };
   useEffect(() => {
