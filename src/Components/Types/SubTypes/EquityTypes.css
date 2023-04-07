@@ -1,6 +1,23 @@
+/* .subtype-container-main {
+  @apply px-5 py-3 bg-gray-100 border-[3px] border-gray-300 m-1 mb-0 border-b-0;
+
+} */
+
 .subtype-container-main {
-  @apply px-5 py-3 bg-gray-100 border-[3px] border-gray-300  m-1 mb-0 border-b-0;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin: 0.25rem;
+  margin-bottom: 0;
+  background: rgba(255, 255, 255, 0.4);
+  border-color: #D1D5DB;
+  box-shadow: 0 8px 32px 0 rgba(171, 233, 202, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
 }
+
 .subtype-header {
   @apply font-bold;
 }

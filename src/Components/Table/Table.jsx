@@ -6,7 +6,9 @@ import UserData from "./UserData";
 
 const Table = ({ urlValue, durationValue }) => {
   const [users, setUsers] = useState([]);
+
   const API = "http://3.111.39.208:8082/stocks/" + urlValue + "/" + durationValue;
+ 
 
   console.log(API);
 

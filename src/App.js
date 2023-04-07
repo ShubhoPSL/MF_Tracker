@@ -3,6 +3,7 @@ import "./App.css";
 import Login from "./Components/PageLogin/Login/Login";
 import Register from "./Components/PageLogin/Register/Register";
 import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Common from "./Components/Common/Common";
 
 function App() {
@@ -14,12 +15,14 @@ function App() {
 
   return (
     <div className="main-container">
+
       {/* <header>
        { 
         currentForm === "Login" ? <Login onFormSwitch={toggleForm}/> : <Register onFormSwitch={toggleForm}/>
         }
      </header> */}
       { <Common /> }
+
 
     </div>
   );
