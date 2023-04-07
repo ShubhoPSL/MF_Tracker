@@ -8,7 +8,8 @@ import UserData from "./UserData";
 const Table = ({ urlValue, durationValue }) => {
   const [users, setUsers] = useState([]);
   const { showBoundary } = useErrorBoundary();
-  const API = "http://localhost:8082/stocks/" + urlValue + "/" + durationValue;
+  const API =
+    "http://3.111.39.208:8082/stocks/" + urlValue + "/" + durationValue;
 
   const fetchUser = async (url) => {
     setUsers([]);

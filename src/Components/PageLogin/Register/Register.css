@@ -1,0 +1,16 @@
+.register-page-container {
+  @apply bg-[url("https://img.freepik.com/free-vector/salary-gap-male-female-business-characters_74855-19874.jpg?size=626&ext=jpg&ga=GA1.1.1775114684.1680260957&semt=ais")] 
+  text-center flex flex-col min-h-screen items-center justify-center;
+}
+
+.form-container {
+  @apply flex flex-col items-baseline backdrop-blur-sm shadow-2xl p-10 justify-center;
+}
+
+label {
+  @apply flex flex-col items-baseline;
+}
+
+input {
+  @apply m-2;
+}

@@ -10,7 +10,6 @@
     "react-dom": "^18.2.0",
     "react-error-boundary": "^4.0.3",
     "react-loader-spinner": "^5.3.4",
-    "react-router-dom": "^6.9.0",
     "react-scripts": "5.0.1",
     "react-spinners": "^0.13.8",
     "styled-components": "^5.3.9",
@@ -41,6 +40,7 @@
     ]
   },
   "devDependencies": {
+    "react-router-dom": "^6.10.0",
     "tailwindcss": "^3.2.7"
   }
 }
