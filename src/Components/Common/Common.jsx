@@ -26,12 +26,10 @@ function Common() {
     setUrl("");
   };
 
-  console.log(url, ":", duration);
-
   return (
     <div>
       <>
-        <Navbar />
+        {/* <Navbar /> */}
         <Types changeSelection={updateSelection} />
         <SubTypes
           type={stockType}

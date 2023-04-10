@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ErrorBoundary } from "react-error-boundary";
 import "./App.css";
 import Login from "./Components/PageLogin/Login/Login";
@@ -17,13 +17,11 @@ function App() {
   return (
     <div className="main-container">
       <ErrorBoundary FallbackComponent={ErrorHandler}>
-        <header>
-          {currentForm === "Login" ? (
-            <Login onFormSwitch={toggleForm} />
-          ) : (
-            <Register onFormSwitch={toggleForm} />
-          )}
-        </header>
+        {currentForm === "Login" ? (
+          <Login onFormSwitch={toggleForm} />
+        ) : (
+          <Register onFormSwitch={toggleForm} />
+        )}
         {/* <Common /> */}
       </ErrorBoundary>
     </div>

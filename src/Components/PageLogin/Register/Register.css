@@ -4,13 +4,6 @@
 }
 
 .form-container {
-  @apply flex flex-col items-baseline backdrop-blur-sm shadow-2xl p-10 justify-center;
+  @apply flex items-start backdrop-blur-sm shadow-2xl px-10 pb-10 justify-center bg-white border rounded-md;
 }
 
-label {
-  @apply flex flex-col items-baseline;
-}
-
-input {
-  @apply m-2;
-}
